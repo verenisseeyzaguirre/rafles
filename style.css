@@ -1,0 +1,143 @@
+body {
+  background-color: #FAEBE0;
+  font-family: 'Volkhov', serif;
+  line-height: 25px;
+  height: 90vh;
+  margin: 0;
+  font-weight: 700;
+}
+
+h1, h2 {
+  color: #876445;
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.contenedor_gnral {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  min-width : 100px;
+  max-width: 200px;
+  height: auto;
+
+  border-radius: 50px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color:aquamarine;
+}
+
+section {
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px rgba(5,10,15,0.2);
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #B5CDA3;
+}
+
+/*btn*/
+section > a {
+  background-color:#CA965C;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  color: white
+}
+
+section > a:hover {
+  background-color:#876445;
+
+}
+
+
+.list_hobbies {
+   padding-left: 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 15px;
+}
+
+li {
+ list-style-type: none;
+ color: #FAEBE0;
+}
+
+.list_hobbies > li:nth-child(2n) {
+   color: #CA965C;
+}
+
+p {
+  color: white
+}
+
+.contenedor_flex {
+  margin: 0 10px;
+  display: flex;
+}
+
+.section_width {
+  width: 45%;
+}
+
+.contenedor_redes {
+  padding-left: 0px;
+}
+
+.contenedor_redes > li {
+  display: inline;
+  text-align: center;
+  padding: 0 5px;
+}
+
+i {
+  font-size: 20px;
+  color: #CA965C;
+}
+
+i:hover {
+  color: #876445;
+}
+
+
+@media (max-width: 1200px) {
+  /* For a screen < 540px, this CSS will be read */
+  .contenedor_gnral {
+    width: 100%;
+  }
+
+  .contenedor_flex {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor_flex_minuswidth {
+    display: flex;
+    justify-content: center;
+  }
+
+  section {
+    width: 80%;
+  }
+
+  .section_width {
+    width: 80%;
+  }
+
+  .info_flex {
+    order: 2;
+  }
+
+  .contenedor_flex_minuswidth > img{
+    order: 1;
+  }
+}
